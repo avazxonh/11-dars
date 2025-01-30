@@ -225,7 +225,7 @@ input {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;
