@@ -224,3 +224,42 @@ input {
     background-color: #2b3844;
   }
 }
+
+@media (max-width: 375px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .site_logo {
+    font-size: 14px;
+    line-height: 20px;
+    width: 137px;
+  }
+  .header__container {
+  }
+  .filter_btn {
+    width: 84px;
+    height: 17px;
+    display: flex;
+  }
+  .filter_heading {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16.37px;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search_input {
+    width: 300px;
+  }
+
+  .filter_btn {
+    margin-top: 40px;
+    width: 200px;
+    padding-bottom: 30px;
+  }
+}
