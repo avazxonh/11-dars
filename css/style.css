@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+}
+
+#list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
+}
+
+li {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  &:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+}
+.header {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px 0px #0000000e;
+  padding-top: 23px;
+  padding-bottom: 24px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img {
+  border-radius: 5px;
+  width: 267px;
+  height: 160px;
+}
+
+.site_logo {
+  text-decoration: none;
+  color: #111517;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32.74px;
+}
+.darkMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_dm_lm {
+  border: none;
+  background-color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21.82px;
+  color: #111517;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+}
+.container {
+  padding-left: 81px;
+  padding-right: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list__item {
+  width: 264px;
+  height: 336px;
+  background-color: #fff;
+  box-shadow: 0px 0px 7px 2px #00000008;
+  border-radius: 5px;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.search_input {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  width: 480px;
+  height: 56px;
+  box-shadow: 0px 2px 9px 0px #0000000e;
+
+  padding-left: 32px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+input {
+  border: 0;
+  outline: none;
+}
+
+.filter_btn {
+  box-shadow: 0px 2px 9px 0px #0000000e;
+  width: 200px;
+  height: 56px;
+  display: flex;
+  padding-left: 24px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+}
+.filter_heading {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #111517;
+}
+
+.cityName {
+  margin-left: 24px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  color: #111517;
+}
+.city_information {
+  margin-left: 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111517;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #fff;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+.darkM {
+  * {
+    background-color: #202c36;
+    color: white;
+  }
+
+  li {
+    background-color: #2b3844;
+    box-shadow: 0px 2px 9px 0px #0000000e;
+  }
+
+  p {
+    background-color: inherit;
+  }
+
+  .header {
+    background-color: #2b3844;
+    box-shadow: 0px 2px 4px 0px #0000000e;
+  }
+  .header__container,
+  .site_logo,
+  .btn,
+  .btn_dm_lm,
+  .fa-moon,
+  .filter_heading,
+  .filter_btn,
+  .search_input,
+  .fa-solid,
+  .qwert,
+  form {
+    background-color: #2b3844;
+  }
+}
